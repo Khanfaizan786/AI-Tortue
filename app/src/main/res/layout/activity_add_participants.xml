@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B4041"
+    tools:context=".activity.AddParticipantsActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressBarAddParticipants"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/addParticipantsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAddParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="0dp"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/searchBoxAddParticipants"
+        android:background="@drawable/text_background"
+        android:hint=" Search here..."
+        android:drawableStart="@drawable/ic_search"
+        android:textColorHint="#3B4041"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:padding="10dp"
+        android:layout_below="@+id/addParticipantsToolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#3B4041"/>
+
+    <TextView
+        android:id="@+id/txtStaticSearch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="No items match your search!!"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:layout_below="@+id/searchBoxAddParticipants"
+        android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchBoxAddParticipants"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerAllUsersList"
+        android:layout_above="@+id/llShowSelectedMembers2"/>
+
+    <LinearLayout
+        android:id="@+id/llShowSelectedMembers2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txtNoOfSelectedMembers2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Participants selected: 0"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddParticipantsFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_proceed"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>

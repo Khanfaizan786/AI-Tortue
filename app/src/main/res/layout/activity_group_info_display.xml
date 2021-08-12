@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GroupInfoDisplayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarGroupDisplay"
+            android:layout_above="@+id/imgBtnEditGroupIcon"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="2dp"
+            android:visibility="gone"/>
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/groupInfoDisplayToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarGroupInfoDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAccent"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/imgGroupImageDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupInfoDisplayToolbar"
+            android:layout_marginTop="-4dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/profile" />
+
+        <ImageButton
+            android:id="@+id/imgBtnEditGroupIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:padding="15dp"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/imgGroupImageDisplay"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgBtnEditGroupIcon"
+            android:id="@+id/txtEditableGroupName"
+            android:textSize="18sp"
+            android:text="Group Name"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#000"
+            android:layout_toEndOf="@+id/imgBtnEditGroupName"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnEditGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_below="@id/imgBtnEditGroupIcon"
+            android:background="@android:color/transparent"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Participants : "
+            android:textSize="18sp"
+            android:layout_below="@+id/imgBtnEditGroupName"
+            android:id="@+id/txtStatic1"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerGroupParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStatic1"/>
+
+        <Button
+            android:id="@+id/btnAddParticipants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerGroupParticipants"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gradient"
+            android:text="Add Participants" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/btnAddParticipants"
+            android:id="@+id/btnExitGroup"
+            android:textAllCaps="false"
+            android:text="Exit Group"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

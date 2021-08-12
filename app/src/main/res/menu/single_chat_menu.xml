@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/clear_chat"
+        android:id="@+id/clearChat"/>
+
+    <item android:title="@string/view_profile"
+        android:id="@+id/viewProfile"/>
+
+    <item android:id="@+id/goToFirstMessage"
+        android:title="@string/go_to_first_message"/>
+
+</menu>

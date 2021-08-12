@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "256081502169",
+    "firebase_url": "https://aitortue.firebaseio.com",
+    "project_id": "aitortue",
+    "storage_bucket": "aitortue.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256081502169:android:4c6f4b28bfb1b468ddc3c8",
+        "android_client_info": {
+          "package_name": "com.example.a_i_tortue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256081502169-t10ad9t4mopefup34veikddsn20ffpl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.a_i_tortue",
+            "certificate_hash": "163e522ebba936544120a873d2c50283bc980581"
+          }
+        },
+        {
+          "client_id": "256081502169-vdq39m7450q9gk8mceusaffehcr3123v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-RNPrTUe97RtFUHt6lS2Lg7hvffTlYL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256081502169-vdq39m7450q9gk8mceusaffehcr3123v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

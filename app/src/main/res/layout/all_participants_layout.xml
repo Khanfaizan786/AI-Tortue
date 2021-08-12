@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:id="@+id/llParticipantLayout"
+    android:weightSum="10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile"
+        android:id="@+id/imgParticipantIcon"
+        android:layout_weight="1.5"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textColor="#000"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/txtParticipantName"
+        android:textSize="16sp"
+        android:layout_weight="7"/>
+
+    <TextView
+        android:id="@+id/txtStaticAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="end|center_vertical"
+        android:layout_weight="1.5"
+        android:layout_marginStart="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DevelopersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Dataset zip file"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:gravity="center"/>
+        
+        <Button
+            android:id="@+id/btnPickFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Pick File"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtFilepath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <EditText
+            android:id="@+id/etUploadFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="text"
+            android:hint="Enter File Name"/>
+
+        <ImageView
+            android:id="@+id/imgUploadFile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/select_image"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/btnUploadFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Upload Dataset"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Document pdf file"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnPickDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Pick Document"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/txtDocumentPath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+        <EditText
+            android:id="@+id/etDocumentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="text"
+            android:hint="Enter Document Name"/>
+
+        <Button
+            android:id="@+id/btnUploadDocument"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Upload Document"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+        
+    </LinearLayout>
+
+</ScrollView>

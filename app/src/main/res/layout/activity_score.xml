@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ScoreActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgScoreLike"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/llPopupScore"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        android:src="@drawable/welldone_icon"
+        android:translationY="50dp" />
+
+    <LinearLayout
+        android:id="@+id/llPopupScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/text_background"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Welldone !"
+            android:textColor="#343434"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="40dp"
+            android:lineSpacingExtra="4dp"
+            android:text="You have sucessfully completed your quiz"
+            android:textAlignment="center"
+            android:textColor="#343434"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Your Score"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtPopupScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="83%"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnScoreClose"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/colorPrimary"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/popupBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_score"
+        android:elevation="3dp"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llScoreToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/gradient2"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="AI Tortue"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtStaticScoreCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llScoreToolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Score Card"
+                android:textColor="#000"
+                android:textSize="42sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rlScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStaticScoreCard"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/txtScoreCardName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Your name"
+                    android:textColor="#3F51B5"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtStaticScore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtScoreCardName"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="You have scored"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/scoreProgressBar"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="83%"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000"
+                    android:textSize="42sp"
+                    android:textStyle="bold"
+                    android:translationY="129dp" />
+
+                <ProgressBar
+                    android:id="@+id/scoreProgressBar"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/txtStaticScore"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/score_progress_bar"
+                    tools:progress="60" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlScore"
+                android:gravity="center_horizontal"
+                android:text="Correct Answers- 5"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtIncorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCorrect"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="Incorrect Answers- 10"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

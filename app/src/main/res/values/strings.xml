@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Ai Tortue</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="contact">Contact Us</string>
+    <string name="report_card">Report Card</string>
+    <string name="rate">Rate Us</string>
+    <string name="logout">LogOut</string>
+
+    <array name="Genders">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="email_address"> Email Address</string>
+    <string name="password"> Password</string>
+    <string name="txtRegisterInformation">You need to provide your real Email. By clicking on Register button you will get a verification link to the given email address where you can verify your email before proceeding…</string>
+    <string name="developers_activity">Developers Activity</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="bookmark">bookMark</string>
+    <string name="bookmark2">Bookmarks</string>
+    <string name="delete_conversation">Delete Conversation</string>
+    <string name="group_info">Group Info</string>
+    <string name="clear_chat">Clear chat</string>
+    <string name="view_profile">View profile</string>
+    <string name="go_to_first_message">Go to First Message</string>
+    <string name="chat">Chat</string>
+    <string name="edit_profile">Edit Profile</string>
+</resources>
